@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('imagescss/cp2079.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ffff;
+    text-align: center;
+}
+
+
+.hero .content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px black, -2px -2px 4px #00ffff, 2px -2px 4px #00ffff, -2px 2px 4px #00ffff;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ffff00;
+    display: inline-block;
+}
+
+#about {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff0099;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+#portfolio {
+    padding: 60px 20px;
+    background-color: #0d0d0d;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00ffff;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project h3 {
+    color: #ff0099;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #aaa;
+}
+
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #111, #000);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
+}
+
+#contact a {
+    font-size: 1.2rem;
+    background-color: #ff0099;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+#contact a:hover{
+    background-color: #00d4ff;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0d0d0d;
+    color: #666;
+}

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('imagescss/uno.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f3d29a;
+    text-align: center;
+}
+
+.hero .content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #f3d29a, 0 0 20px #d4a856;
+}
+
+#about {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d4a856;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+#portfolio {
+    padding: 60px 20px;
+    background-color: #0d0d0d;
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f3d29a;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(243, 210, 154, 0.5);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project h3 {
+    color: #f3d29a;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #aaa;
+}
+
+#contact {
+    background: #181818;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#contact a {
+    font-size: 1.2rem;
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#contact a:hover{
+    background-color: #ff8400;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ff8400;
+    display: inline-block;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #0d0d0d;
+    color: #666;
+}
